@@ -1,0 +1,170 @@
+﻿<UserControl x:Class="Biltek.KlavyeTest.KeyboardView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Biltek.KlavyeTest"
+             mc:Ignorable="d" 
+             Width="1018" Height="420" Background="Silver">
+    <UserControl.Resources>
+        <Style x:Key="Spacer" TargetType="Rectangle">
+            <Setter Property="Height" Value="48"/>
+            <Setter Property="Margin" Value="2,6"/>
+            <Setter Property="Stroke" Value="Gray"/>
+            <Setter Property="StrokeDashArray" Value="2 2"/>
+        </Style>
+    </UserControl.Resources>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="750"/>
+            <ColumnDefinition Width="60"/>
+            <ColumnDefinition Width="52"/>
+            <ColumnDefinition Width="52"/>
+            <ColumnDefinition Width="52"/>
+            <ColumnDefinition Width="52"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal">
+            <local:KeyButton Text="ESC" KeyCode="Escape"/>
+            <Rectangle Style="{StaticResource Spacer}" Width="20"/>
+            <local:KeyButton Text="F1" KeyCode="F1"/>
+            <local:KeyButton Text="F2" KeyCode="F2"/>
+            <local:KeyButton Text="F3" KeyCode="F3"/>
+            <local:KeyButton Text="F4" KeyCode="F4"/>
+            <Rectangle Style="{StaticResource Spacer}" Width="20"/>
+            <local:KeyButton Text="F5" KeyCode="F5"/>
+            <local:KeyButton Text="F6" KeyCode="F6"/>
+            <local:KeyButton Text="F7" KeyCode="F7"/>
+            <local:KeyButton Text="F8" KeyCode="F8"/>
+            <Rectangle Style="{StaticResource Spacer}" Width="20"/>
+            <local:KeyButton Text="F9" KeyCode="F9"/>
+            <local:KeyButton Text="F10" KeyCode="F10"/>
+            <local:KeyButton Text="F11" KeyCode="F11"/>
+            <local:KeyButton Text="F12" KeyCode="F12"/>
+        </StackPanel>
+        <local:KeyButton Grid.Row="0" Grid.Column="1" Text="PRT SC" KeyCode="Snapshot"/>
+        <local:KeyButton Grid.Row="0" Grid.Column="2" Text="SCR LK" KeyCode="Scroll"/>
+        <local:KeyButton Grid.Row="0" Grid.Column="3" Text="Pause break" KeyCode="Pause"/>
+        <local:KeyButton Grid.Row="0" Grid.Column="4" Text="HOME" KeyCode="Home"/>
+        <local:KeyButton Grid.Row="0" Grid.Column="5" Text="END" KeyCode="End"/>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <local:KeyButton Text="&quot;" KeyCode="OemTilde"/>
+            <local:KeyButton Text="1" KeyCode="D1"/>
+            <local:KeyButton Text="2" KeyCode="D2"/>
+            <local:KeyButton Text="3" KeyCode="D3"/>
+            <local:KeyButton Text="4" KeyCode="D4"/>
+            <local:KeyButton Text="5" KeyCode="D5"/>
+            <local:KeyButton Text="6" KeyCode="D6"/>
+            <local:KeyButton Text="7" KeyCode="D7"/>
+            <local:KeyButton Text="8" KeyCode="D8"/>
+            <local:KeyButton Text="9" KeyCode="D9"/>
+            <local:KeyButton Text="0" KeyCode="D0"/>
+            <local:KeyButton Text="*" KeyCode="Oem8"/>
+            <local:KeyButton Text="-" KeyCode="OemMinus"/>
+            <local:KeyButton Text="←" Width="120" KeyCode="Back"/>
+        </StackPanel>
+        <local:KeyButton Grid.Row="1" Grid.Column="1" Text="Page Up" KeyCode="PageUp"/>
+        <local:KeyButton Grid.Row="1" Grid.Column="2" Text="NUM LOCK" KeyCode="NumLock"/>
+        <local:KeyButton Grid.Row="1" Grid.Column="3" Text="/" KeyCode="Divide"/>
+        <local:KeyButton Grid.Row="1" Grid.Column="4" Text="*" KeyCode="Multiply"/>
+        <local:KeyButton Grid.Row="1" Grid.Column="5" Text="-" KeyCode="Subtract"/>
+
+        <StackPanel Grid.Row="2" Orientation="Horizontal">
+            <local:KeyButton Text="Tab" Width="68" KeyCode="Tab"/>
+            <local:KeyButton Text="Q" KeyCode="Q"/>
+            <local:KeyButton Text="W" KeyCode="W"/>
+            <local:KeyButton Text="E" KeyCode="E"/>
+            <local:KeyButton Text="R" KeyCode="R"/>
+            <local:KeyButton Text="T" KeyCode="T"/>
+            <local:KeyButton Text="Y" KeyCode="Y"/>
+            <local:KeyButton Text="U" KeyCode="U"/>
+            <local:KeyButton Text="I" KeyCode="I"/>
+            <local:KeyButton Text="O" KeyCode="O"/>
+            <local:KeyButton Text="P" KeyCode="P"/>
+            <local:KeyButton Text="Ğ" KeyCode="OemOpenBrackets"/>
+            <local:KeyButton Text="Ü" KeyCode="OemCloseBrackets"/>
+            <local:KeyButton Text=":" Width="48" KeyCode="OemComma"/>
+        </StackPanel>
+        <local:KeyButton Grid.Row="2" Grid.Column="1" Text="Page Down" KeyCode="PageDown"/>
+        <local:KeyButton Grid.Row="2" Grid.Column="2" Text="7" KeyCode="NumPad7"/>
+        <local:KeyButton Grid.Row="2" Grid.Column="3" Text="8" KeyCode="NumPad8"/>
+        <local:KeyButton Grid.Row="2" Grid.Column="4" Text="9" KeyCode="NumPad9"/>
+        <local:KeyButton Grid.Row="2" Grid.Column="5" Grid.RowSpan="2" Text="+" Height="Auto" KeyCode="Add"/>
+
+        <StackPanel Grid.Row="3" Orientation="Horizontal">
+            <local:KeyButton Text="Caps Lock" Width="88" KeyCode="Capital"/>
+            <local:KeyButton Text="A" KeyCode="A"/>
+            <local:KeyButton Text="S" KeyCode="S"/>
+            <local:KeyButton Text="D" KeyCode="D"/>
+            <local:KeyButton Text="F" KeyCode="F"/>
+            <local:KeyButton Text="G" KeyCode="G"/>
+            <local:KeyButton Text="H" KeyCode="H"/>
+            <local:KeyButton Text="J" KeyCode="J"/>
+            <local:KeyButton Text="K" KeyCode="K"/>
+            <local:KeyButton Text="L" KeyCode="L"/>
+            <local:KeyButton Text="Ş" KeyCode="OemSemicolon"/>
+            <local:KeyButton Text="İ" KeyCode="OemQuotes"/>
+            <local:KeyButton x:Name="BtnEnter" Text="Enter" Width="80"/>
+        </StackPanel>
+        <local:KeyButton Grid.Row="3" Grid.Column="1" Text="Insert" KeyCode="Insert"/>
+        <local:KeyButton Grid.Row="3" Grid.Column="2" Text="4" KeyCode="NumPad4"/>
+        <local:KeyButton Grid.Row="3" Grid.Column="3" Text="5" KeyCode="NumPad5"/>
+        <local:KeyButton Grid.Row="3" Grid.Column="4" Text="6" KeyCode="NumPad6"/>
+
+        <StackPanel Grid.Row="4" Orientation="Horizontal">
+            <local:KeyButton Text="SHIFT" Width="72" KeyCode="LeftShift"/>
+            <local:KeyButton Text="&lt;" KeyCode="OemBackslash"/>
+            <local:KeyButton Text="Z" KeyCode="Z"/>
+            <local:KeyButton Text="X" KeyCode="X"/>
+            <local:KeyButton Text="C" KeyCode="C"/>
+            <local:KeyButton Text="V" KeyCode="V"/>
+            <local:KeyButton Text="B" KeyCode="B"/>
+            <local:KeyButton Text="N" KeyCode="N"/>
+            <local:KeyButton Text="M" KeyCode="M"/>
+            <local:KeyButton Text="Ö" KeyCode="OemQuestion"/>
+            <local:KeyButton Text="Ç" KeyCode="OemPipe"/>
+            <local:KeyButton Text="." KeyCode="OemPeriod"/>
+            <local:KeyButton Text="SHIFT" Width="96" KeyCode="RightShift"/>
+        </StackPanel>
+        <local:KeyButton Grid.Row="4" Grid.Column="1" Text="Delete" KeyCode="Delete"/>
+        <local:KeyButton Grid.Row="4" Grid.Column="2" Text="1" KeyCode="NumPad1"/>
+        <local:KeyButton Grid.Row="4" Grid.Column="3" Text="2" KeyCode="NumPad2"/>
+        <local:KeyButton Grid.Row="4" Grid.Column="4" Text="3" KeyCode="NumPad3"/>
+        <local:KeyButton x:Name="BtnNumEnter" Grid.Row="4" Grid.Column="5" Grid.RowSpan="2" Text="Enter" Height="Auto"/>
+
+        <StackPanel Grid.Row="5" Orientation="Horizontal">
+            <local:KeyButton Text="CTRL" Width="62" KeyCode="LeftCtrl"/>
+            <local:KeyButton Text="WIN" Width="62" KeyCode="LWin"/>
+            <local:KeyButton Text="ALT" Width="62" KeyCode="LeftAlt"/>
+            <local:KeyButton Text="" Width="348" KeyCode="Space"/>
+            <local:KeyButton Text="ALT GR" Width="62" KeyCode="RightAlt"/>
+            <local:KeyButton Text="MENU" Width="62" KeyCode="Apps"/>
+            <local:KeyButton Text="CTRL" Width="62" KeyCode="RightCtrl"/>
+        </StackPanel>
+        <local:KeyButton Grid.Row="5" Grid.Column="1" Text="↑" KeyCode="Up"/>
+        <local:KeyButton Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="2" Text="0" Width="Auto" KeyCode="NumPad0"/>
+        <local:KeyButton Grid.Row="5" Grid.Column="4" Text="." KeyCode="Decimal"/>
+
+        <StackPanel Grid.Row="6" Grid.ColumnSpan="6" Orientation="Horizontal">
+            <Rectangle Style="{StaticResource Spacer}" Width="220"/>
+            <local:KeyButton x:Name="BtnSolTik" Width="76"/>
+            <local:KeyButton x:Name="BtnOrtaTik"/>
+            <local:KeyButton x:Name="BtnSagTik" Width="76"/>
+            <Rectangle Style="{StaticResource Spacer}" Width="262"/>
+            <local:KeyButton Text="←" KeyCode="Left"/>
+            <local:KeyButton Text="↓" KeyCode="Down"/>
+            <local:KeyButton Text="→" KeyCode="Right"/>
+        </StackPanel>
+    </Grid>
+</UserControl>

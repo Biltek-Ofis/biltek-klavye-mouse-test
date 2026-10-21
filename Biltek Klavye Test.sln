@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Biltek Klavye Test", "Biltek Klavye Test\Biltek Klavye Test.csproj", "{9C04B054-E655-4736-9624-33ED6FF8D32C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Biltek Klavye & Mouse Test", "Biltek Klavye & Mouse Test\Biltek Klavye & Mouse Test.csproj", "{BADC46BE-3DBD-4506-AFBE-C76600202C5E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,12 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9C04B054-E655-4736-9624-33ED6FF8D32C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9C04B054-E655-4736-9624-33ED6FF8D32C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9C04B054-E655-4736-9624-33ED6FF8D32C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9C04B054-E655-4736-9624-33ED6FF8D32C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BADC46BE-3DBD-4506-AFBE-C76600202C5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BADC46BE-3DBD-4506-AFBE-C76600202C5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BADC46BE-3DBD-4506-AFBE-C76600202C5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BADC46BE-3DBD-4506-AFBE-C76600202C5E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F7C1D6AB-DBCD-4D0E-8B46-1BC0845D34B8}
 	EndGlobalSection
 EndGlobal
